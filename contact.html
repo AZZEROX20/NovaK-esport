@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novak Esport - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">NOVAK<span>.</span></div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="effectif.html">Effectif</a>
+            <a href="tournois.html">Tournois</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <a href="contact.html" class="btn-header">Rejoindre la Team</a>
+    </header>
+
+    <main class="container">
+        <span class="sub-title">UNE QUESTION ? UN PARTENARIAT ?</span>
+        <h1>CONTACTE <span class="glow-text">L'ÉQUIPE</span></h1>
+
+        <div class="contact-card">
+            <!-- Remplace l'action par ton lien Formspree -->
+            <form action="https://formspree.io/f/ton_form_id" method="POST" class="contact-form">
+                
+                <div class="form-group">
+                    <label for="pseudo">Pseudo / Nom</label>
+                    <input type="text" id="pseudo" name="pseudo" placeholder="Ex: Novak_Player" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="ton.email@exemple.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Sélectionne un sujet</option>
+                        <option value="Recrutement">Recrutement / Candidature</option>
+                        <option value="Partenariat">Partenariat / Sponsor</option>
+                        <option value="Autre">Autre demande</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Écris ton message ici..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">ENVOYER LE MESSAGE</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
